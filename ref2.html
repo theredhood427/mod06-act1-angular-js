@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Module 06- Activity 01</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <h1>Welcome </h1>
+    <h2>Homepage</h2>
+    <h2> Registration/login</h2>
+    <form name="form">
+        <div ng-hide="toShow">
+                <input type="text" required ng-model="Name"/>
+                <br>
+                <br>
+                <input type="button" ng-disabled="" ng-click="toShow=true" value="Sign in"/>
+        </div>
+        <div ng-show="toShow">
+            Sign in Successful.
+            <br>
+            <input type="button" ng-click="toShow-false" value="Logout">
+        </div>
+        
+    </form> 
+    
+</body>
+</html>
